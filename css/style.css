@@ -1,0 +1,903 @@
+/* Geniral Code */
+/*
+    firrst color : #ce7852
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* Start Header */
+.nav {
+    background-image: url(../images/Home.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.nav .useFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav .logo {
+    margin-top: 17px;
+
+}
+
+.nav .app-text .text {
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.nav .app-text .text li {
+    margin-right:10px;
+    position: relative;
+
+
+}
+.nav .app-text .text li::before 
+{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 0%;
+    height: 2px;
+    transition: all .5s;
+}
+.nav .app-text .text li:hover::before
+{
+    width: 100%;
+}
+.nav .app-text .text li a {
+    color: #444;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all .5s;
+
+}
+
+.nav .app-text .text li a:hover {
+    color: #ce7852;
+}
+
+.nav .app-text .icons {
+    margin-left: 10px;
+}
+
+.nav .app-text .icons li {
+    padding: 10px;
+ 
+}
+.nav .app-text .icons .print 
+{
+    position:relative
+}
+.nav .app-text .icons .print::after
+{
+    position: absolute;
+    content: attr(data-count);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 0px;
+    left: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #b93f0b;
+    font-weight: bold;
+
+}
+
+.nav .app-text .icons li i {
+    color: #888;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.nav .app-text .icons li i:hover {
+    color: #ce7852;
+}
+
+/* Content  */
+.nav .useFlex .content-text {
+    position: absolute;
+    top: 200px;
+    left: 0;
+
+}
+
+.nav .useFlex .content-text h2 {
+    color: #3c3c3c;
+    font-size: 68px;
+    font-family: poppins;
+    font-weight: 700;
+    line-height: 1.2;
+
+
+}
+
+.nav .useFlex .content-text h2 span {
+    color: #ce7852;
+}
+
+.nav .useFlex .content-text h6 {
+    margin-top: 50px;
+    margin-top: 50px;
+    font-size: 17px;
+    color: #888;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+    display: inline-block;
+}
+
+.nav .useFlex .content-text h6:hover i {
+    color: #ce7852;
+    padding-left: 15px;
+
+}
+
+.nav .useFlex .content-text h6 i {
+    margin-left: 10px;
+    transition: all .5s;
+
+}
+
+.nav .left {
+    position: absolute;
+    left: 40px;
+    font-size: 40px;
+    top: 300px;
+    cursor: pointer;
+    color: #666;
+    transition: all .5s;
+}
+
+.nav .right {
+    position: absolute;
+    right: 40px;
+    top: 300px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #666;
+    transition: all .5s;
+}
+
+.nav .right:hover {
+    color: #ce7852;
+    right: 35px;
+}
+
+.nav .left:hover {
+    color: #ce7852;
+    left: 35px;
+}
+
+/* Start Prdoducts */
+.product {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.product .Title,
+.allPro .Title,
+.blog .Title,
+.seller .Title
+
+/* All Group */
+    {
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product .Title span,
+.allPro .Title span,
+.blog .Title span,
+.seller .Title span {
+    color: #ce7852;
+    
+}
+
+.product .des,
+.allPro .des,
+.blog .des,
+.seller .des
+
+/* All Group  */
+    {
+    color: #555;
+
+    text-align: center
+}
+
+.product .app-pro {
+    display: flex;
+    justify-content: center;
+}
+
+.product .one {
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+
+}
+.product .one .add 
+{
+    padding: 5px 20px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #ce7852;
+    color: #FFF;
+    cursor: pointer;
+    transition: all .5s;
+}
+.product .one .add:hover
+{
+    background-color: #c0866d;
+    color: #FFF;
+}
+
+.product .one .boxImage {
+    position: relative;
+    margin-bottom: 20px;
+    width: 250px;
+}
+.product .one .boxImage img 
+{
+    width: 100%;
+}
+.product .one .boxImage .ch {
+    height: 314px;
+}
+.product .one .boxImage div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ce7852;
+    color: #fff;
+    padding: 3px 10px;
+    letter-spacing: 1.4px;
+    font-size: 12px;
+}
+
+.product .one .boxText h5 {
+    font-size: 18px;
+    color: #555;
+    text-transform: capitalize;
+    padding: 5px;
+    padding-bottom: 12px;
+}
+
+.product .one .boxText ul li:first-of-type {
+    color: #ce7852;
+    font-weight: bold;
+    padding-right: 7px;
+}
+
+.product .one .boxText ul li:last-of-type {
+    font-size: 13px;
+    color: #666;
+    text-decoration: line-through;
+}
+
+/* Start Stay With Us */
+.stay {
+    background-image: url(../images/stay.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+}
+
+.stay .appStay {
+    position: relative;
+}
+
+.stay .boxText {
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    top: 125px;
+    right: 0;
+
+}
+
+.stay .boxText h2 {
+    text-transform: uppercase;
+    padding-bottom: 13px;
+    font-size: 30px;
+    color: #333;
+}
+
+.stay .boxText p {
+    color: #666;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    padding-top: 10px;
+
+}
+
+.stay .boxText .apinput {
+
+    position: relative;
+    margin-top: 20px;
+}
+
+.stay .boxText .apinput input {
+    width: 250px;
+    border: none;
+    border-style: none none solid;
+    height: 50px;
+    outline: none;
+    border-width: 0 0 1px;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.stay .boxText .apinput button {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.stay .boxText .apinput button:hover {
+    color: #ce7852;
+}
+
+/* Start All Pro */
+.allPro {
+    padding-top: 60px;
+}
+
+.allPro .list {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.allPro .list ul li {
+    padding: 6px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+    font-weight: 400;
+    color: #444;
+
+}
+
+.allPro .list ul li:hover {
+    color: #ce7852;
+}
+
+.allPro .list ul li:not(li:last-of-type) {
+    border-right: 1px solid #55555536
+}
+
+/* End All Pro  */
+
+.product.test {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.product.test2 {
+    padding-bottom: 60px !important;
+}
+
+/* Start Blog */
+.blog {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.blog>p {
+    line-height: 25px;
+}
+
+.blog .appBlog {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .appBlog .first {
+    width: calc(100% / 3 - 15px);
+    padding: 25px;
+    background-color: #FFF;
+    transition: all .5s;
+
+}
+
+.blog .appBlog .first:hover {
+    box-shadow: 0 0 10px rgb(190, 189, 189);
+    margin-top: -10px;
+
+}
+
+.blog .appBlog .first h3 {
+    padding-bottom: 10px;
+    color: #444;
+    line-height: 30.5px;
+}
+
+.blog .appBlog .first .test {
+    color: #555;
+    padding-bottom: 45px;
+    padding-top: 10px;
+    border-bottom: 1px solid #888;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.blog .appBlog .first .bolts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #666;
+    padding-bottom: 0px;
+}
+
+.blog .appBlog .first .bolts p span:first-of-type {
+    font-weight: bold;
+    padding-right: 20px;
+    color: #0000006b;
+}
+
+.blog .appBlog .first .bolts p span:last-of-type {
+    font-weight: bold;
+    color: #0000006b;
+}
+
+.blog .appBlog .first .bolts .fa-heart-o {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.blog .appBlog .first .bolts .fa-heart-o:hover {
+    color: red;
+    font-size: 15px;
+
+}
+
+.blog .appBlog .first .bolts .fa-comment-o {
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.blog .appBlog .first .bolts .fa-comment-o:hover {
+    color: blue;
+
+}
+
+/* End Blog */
+
+/* Start Seller */
+.seller {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.seller .allImages {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+
+
+
+}
+
+.seller .allImages div {
+
+    width: 13%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.seller .allImages div img {
+    width: 100%;
+    height: 100%;
+}
+
+.seller .allImages div:nth-child(4) {
+    width: 200px;
+    margin-top: -20px;
+}
+
+.seller .allImages div .iconn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #0000006b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEE;
+    transition: all .5s;
+}
+
+.seller .allImages div .iconn i {
+    font-size: 30px;
+    padding-right: 11px;
+    transition: all .5s;
+}
+
+.seller .allImages div .iconn i:hover {
+    color: #ce7852;
+}
+
+.seller .allImages div:hover .iconn {
+    height: 100%;
+}
+
+/* End Seller */
+
+/* Start Footer */
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+footer .ftext {
+    padding-top: 40px;
+    color: #666;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+footer .ficon li {
+    padding: 10px 10px;
+
+}
+
+footer .ficon li i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer .ficon li i:hover {
+    color: #ce7852;
+}
+
+footer .flist li {
+    padding: 20px 15px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer .flist li:hover {
+    color: #ce7852;
+}
+
+/* End Footer */
+
+/* Copy Right */
+.copy {
+    border-top: 1px solid #55555526;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f4f4f4bf;
+}
+
+.copy .apcopy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy .apcopy .ctext {
+    font-weight: bold;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.copy .apcopy .ctext::first-letter {
+    font-size: 30px;
+}
+
+/* Copy Right */
+
+/* Start To Top */
+.top 
+{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #99999929;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+
+}
+.top i 
+{
+    font-size: 30px;
+    margin-top: 9px;
+    transition: all .5s;
+}
+.top i:hover 
+{
+color: #ce7852;
+
+}
+
+
+/************************************************* Start From JavaScript  */
+/* OverLay */
+.overlay
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: #999999f0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.appDiv 
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 420px; 
+    z-index: 1002;
+    border-top: 5px solid #ce7852;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    padding: 40px;
+    text-transform: capitalize;
+    background-color: #ce78523d;
+    color: #555;
+    
+}
+.appDiv::first-letter 
+{
+    color: #ce7852;
+    
+}
+.appDiv input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 21px;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+
+.appDiv .userButton 
+{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 4px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all .5s;
+}
+.appDiv .userButton:hover 
+{
+    color: #FFF;
+    background-color: #ce7852;
+}
+
+.appDiv .spanClose
+{
+    position: absolute;
+    top: -25px;
+    right: -20px;
+    color: #fff;
+    background-color: #ce7852e6;
+    border-radius: 50%;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all .5s;
+
+}
+.appDiv .spanClose:hover 
+{
+    color: #ce7852;
+    background-color: #EEE;
+}
+
+.user 
+{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    
+}
+.user::first-letter {
+    color:#ce7852;
+    border-bottom: 1px solid #ce7852;
+}
+
+/* Start Add Cart */
+.ItemCart 
+{
+    position:fixed;
+    top: -1000px;
+    left: 20%;
+    background-color: #ffffffeb;
+    box-shadow: 0 0 10px #999;
+    width: 60%;
+    height: 520px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-between;
+    transition: all .5s
+}
+.ItemCart .exit {
+
+    padding: 5px 20px;
+    color: #FFF;
+    background: #000;
+    font-size: 21px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+.ItemCart .exit:hover 
+{
+    background-color: #b93f0b;
+}
+
+.ItemCart .one
+{
+    width: 40%;
+    padding: 20px 20px;
+    margin-top: 25px;
+    border-top: 1px solid #999;
+
+    
+}
+.ItemCart .one .boxImage {
+    position: relative;
+
+}
+.ItemCart .one .boxImage div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 5px;
+    background: #000000b3;
+    color: #FFF;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.ItemCart .one .boxImage img 
+{
+    width: 100%;
+    height: 350px;
+
+}
+.ItemCart .one .boxText 
+{
+    margin-top: 18px;
+}
+.ItemCart .one .boxText h5 
+{
+    font-size: 18px;
+}
+.ItemCart .one .boxText h5::first-letter
+{
+    color:#b93f0b
+}
+.ItemCart .one .boxText ul 
+{
+    color: #000000d6;
+    font-weight: bold;
+}
+.ItemCart .one .boxText ul li:last-of-type 
+{
+    text-decoration: line-through;
+    color: #777;
+}
+
+.ItemCart .one .add
+{
+    padding: 3px 6px;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    background: #f44336;
+
+}
+
+.ItemCart .one .buy 
+{
+    padding: 3px 6px;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    background: #03a9f4;
+    margin-left: 20px;
+}
+.ItemCart.display 
+{
+    top: 0px;
+} 
