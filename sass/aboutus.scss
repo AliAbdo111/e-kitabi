@@ -1,0 +1,88 @@
+@import "./reset";
+@import "./vars";
+
+// Header
+
+header {
+    background-image: url("../images//cover-aboutus.webp");
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    & div {
+        text-align: center;
+        padding-top: 35vh;
+        & h2 {
+            color: white;
+        }
+        & p {
+            font-style: italic;
+            color: white;
+            & span {
+                color: rgb(240, 9, 9);
+            }
+        }
+    }
+}
+
+// div2
+.div2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20;
+    & h2 {
+        font-weight: 20px;
+        font-size: 30px;
+    }
+}
+
+// div3
+.div3 {
+    margin-bottom: 60px;
+    & .left-half {
+        & h6 {
+            margin-top: 20px;
+        }
+        & .bar {
+            background-color: rgba(106, 106, 106, 0.45);
+            margin-top: 20px;
+            height: 10px;
+            width: 80%;
+            position: relative;
+            &::before {
+                content: "";
+                background-color: grey;
+                width: 80%;
+                height: 10px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            // &:scope::before {
+            //     width: 80%;
+            // }
+        }
+    }
+}
+
+// div4
+.div4 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20;
+    & h2 {
+        font-weight: 20px;
+        font-size: 30px;
+    }
+}
+
+// The team
+.div5 {
+    & div {
+        text-align: center;
+        & .icons {
+            & i {
+                display: none;
+            }
+        }
+    }
+}

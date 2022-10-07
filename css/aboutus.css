@@ -1,0 +1,101 @@
+/* Geniral Code */
+/*
+    firrst color : #ce7852
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../images//cover-aboutus.webp");
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+header div {
+  text-align: center;
+  padding-top: 35vh;
+}
+header div h2 {
+  color: white;
+}
+header div p {
+  font-style: italic;
+  color: white;
+}
+header div p span {
+  color: rgb(240, 9, 9);
+}
+
+.div2 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20;
+}
+.div2 h2 {
+  font-weight: 20px;
+  font-size: 30px;
+}
+
+.div3 {
+  margin-bottom: 60px;
+}
+.div3 .left-half h6 {
+  margin-top: 20px;
+}
+.div3 .left-half .bar {
+  background-color: rgba(106, 106, 106, 0.45);
+  margin-top: 20px;
+  height: 10px;
+  width: 80%;
+  position: relative;
+}
+.div3 .left-half .bar::before {
+  content: "";
+  background-color: grey;
+  width: 80%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.div4 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20;
+}
+.div4 h2 {
+  font-weight: 20px;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=aboutus.css.map */
