@@ -1,0 +1,280 @@
+/* -----Start Glopal -------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ------End Glopal-------- */
+
+
+/* Start Navbar */
+nav {
+    /* background-color:transparent;*/
+    background-image: url(../images/BooksPage.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav .app {
+    position: sticky;
+    top: 0;
+}
+
+nav .app .useflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid #888;
+}
+
+nav .app .useflex .text ul li {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    display: inline-block;
+
+
+}
+
+nav .app .useflex .text ul li a {
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .5s;
+    color: #fff;
+
+}
+
+nav .app .useflex .text ul li a:hover {
+    color: #ce7852;
+}
+.title_categories{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.title_categories h2{
+    text-align: center;
+    color: #fff;
+}
+.title_categories h2 span{
+    color: #ce7852;
+}
+/* ------End Nav------ */
+
+
+/* Start Header */
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+}
+.header .title h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+.header .title h2::first-letter{
+    color: #ce7852;
+}
+
+.select_sort select{
+    padding: 5px 10px;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid #333;
+}
+.select_sort select:focus{
+    border: 1px solid #ce7852;
+}
+
+/* End Header */
+
+
+
+/* Start Books */
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.parent .card{
+    width: 30%;
+    /* overflow: hidden; */
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.parent .card .book_content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+.parent .card .book_content::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ce7752d7;
+    transition: width 0.5s ease-in;
+}
+.parent .card .book_content:hover::after{
+    width: 100%;
+}
+.parent .card .book_content img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in;
+}
+.parent .card .book_content:hover img{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in;
+}
+.parent .card .book_content .discBook{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -200%, -50%);
+    font-size: medium;
+    transition: transform 0.5s ease-in;
+    color: #fff;
+    z-index: 2;
+} 
+.parent .card .book_content:hover .discBook {
+    transform:translate(-50% , -50%) ;
+}
+
+.download_input{
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    background-color: #ce7852;
+    color: #FFF;
+    cursor: pointer;
+    transition: all .5s;
+}
+.download_input:hover{
+    background-color: #c0866d;
+    color: #FFF;
+} 
+/* End Books */
+
+
+
+/* Start Footer */
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+footer .ftext {
+    padding-top: 40px;
+    color: #666;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+footer .ficon li {
+    padding: 10px 10px;
+
+}
+
+footer .ficon li i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer .ficon li i:hover {
+    color: #ce7852;
+}
+
+footer .flist li {
+    padding: 20px 15px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+footer .flist li:hover {
+    color: #ce7852;
+}
+
+/* End Footer */
+
+/* Copy Right */
+.copy {
+    border-top: 1px solid #55555526;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f4f4f4bf;
+}
+
+.copy .apcopy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy .apcopy .ctext {
+    font-weight: bold;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.copy .apcopy .ctext::first-letter {
+    font-size: 30px;
+}
+
+/* Copy Right */
