@@ -1,0 +1,22 @@
+{
+  "name": "e-kitabi",
+  "version": "1.0.0",
+  "description": "for book store \r ## nproject notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAbdo111/e-kitabi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliAbdo111/e-kitabi/issues"
+  },
+  "homepage": "https://github.com/AliAbdo111/e-kitabi#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
